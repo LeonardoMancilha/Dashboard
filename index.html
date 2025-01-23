@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <meta
+      name="description"
+      content="Site de exemplo de um Dashboard feito com HTML, CSS e JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="programação, tecnologia, projeto pessoal, dashboard, front-end, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Leonardo Mancilha" />
+    <meta name="robots" content="index, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+    </noscript>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-content">
+        <div class="user">
+          <img
+            src="/assets/img/leonardomancilha.png"
+            class="user-avatar"
+            alt="Foto de perfil de Leonardo Mancilha"
+          />
+
+          <p class="user-infos">
+            <span class="item-description">Leonardo Mancilha</span>
+          </p>
+        </div>
+
+        <ul class="side-items">
+          <li class="side-item active">
+            <a href="#">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="item-description"> Dashboard </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="item-description"> Pesquisar </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+              <span class="item-description"> Usuários </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-bell"></i>
+              <span class="item-description"> Notificações </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-box"></i>
+              <span class="item-description"> Produtos </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-image"></i>
+              <span class="item-description"> Imagens </span>
+            </a>
+          </li>
+
+          <li class="side-item">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="item-description"> Configurações </span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="open-btn" aria-label="Abrir menu" aria-expanded="false">
+          <i id="open-btn-icon" class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="logout">
+        <button class="logout-btn">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="item-description"> Logout </span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="sales-menu">
+        <div class="info">
+          <h1>Olá, Leonardo</h1>
+          <span>
+            Aqui estão as informações 
+            sobre suas vendas.
+          </span>
+        </div>
+        <button class="dark-mode-toggle" aria-label="Ativar modo escuro">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </header>
+      <section class="revenue">
+        <article class="info-grafico">
+          <section class="chart-container">
+            <canvas class="myChart" height="300"></canvas>
+          </section>
+
+          <article class="historico">
+            <h2>Histórico de Transações</h2>
+            <section class="numeros">
+              <span class="preco">Ontem</span>
+              <span class="price-day">R$ 540,32</span>
+            </section>
+            <section class="numeros">
+              <span class="preco">Segunda</span>
+              <span class="price-day">R$ 273,90</span>
+            </section>
+            <section class="numeros">
+              <span class="preco">Terça</span>
+              <span class="price-day">R$ 765,20</span>
+            </section>
+            <section class="numeros">
+              <span class="preco">Quarta</span>
+              <span class="price-day">R$ 2.581,50</span>
+            </section>
+          </article>
+        </article>
+
+        <article class="estatisticas">
+          <section class="dados">
+            <p class="paragrafo-preco">Total de vendas</p>
+            <h3 class="titulo-preco">R$ 3.265,21</h3>
+            <i class="fa-solid fa-arrow-up"> + 11 %</i>
+          </section>
+
+          <section class="dados">
+            <p class="paragrafo-preco">Total líquido</p>
+            <h3 class="titulo-preco">R$ 2.825,58</h3>
+            <i class="fa-solid fa-arrow-up"> + 15 %</i>
+          </section>
+
+          <section class="dados">
+            <p class="paragrafo-preco">Compras canceladas</p>
+            <h3 class="titulo-preco">R$ 130,00</h3>
+            <i class="fa-solid fa-arrow-down"> -80 %</i>
+          </section>
+
+          <section class="dados">
+            <p class="paragrafo-preco">Reembolsos</p>
+            <h3 class="titulo-preco">R$ 345,00</h3>
+            <i class="fa-solid fa-arrow-down"> -78 %</i>
+          </section>
+        </article>
+
+        <article class="dashboard">
+          <h1>Relatório de Vendas</h1>
+          <div class="tabela-scroll">
+            <table class="tabela-dashboard">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Data</th>
+                  <th>Nome</th>
+                  <th>Localização</th>
+                  <th>Valor</th>
+                  <th>Situação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#12345</td>
+                  <td>02/08/2024</td>
+                  <td>Roberto Santos</td>
+                  <td>Rio Grande do Sul</td>
+                  <td>R$ 15,00</td>
+                  <td>
+                    <i class="fa-solid fa-circle aprovado-icon"></i>Aprovado
+                  </td>
+                </tr>
+                <tr>
+                  <td>#67890</td>
+                  <td>03/08/2024</td>
+                  <td>Beatriz Rodrigues</td>
+                  <td>Salvador</td>
+                  <td>R$ 25,00</td>
+                  <td>
+                    <i class="fa-solid fa-circle analise-icon"></i>Em análise
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
