@@ -1,6 +1,6 @@
 # Dashboard
 
-
+![Imagem do Projeto](https://github.com/user-attachments/assets/9af359c0-d417-4791-8c8f-6c0d40058907)
 
 ## Descrição
 
@@ -14,7 +14,6 @@
 - <strong>Animações sutis</strong>: Pequenas animações são aplicadas ao passar o mouse sobre alguns elementos, proporcionando uma experiência mais dinâmica.
 - <strong>Modo Dark/Light</strong>: Alternância entre o modo claro e o modo escuro para uma experiência de visualização personalizada.
 - <strong>Desempenho otimizado</strong>: A página foi otimizada para carregar rapidamente e oferecer uma boa experiência ao usuário.
-
 
 ## Tecnologias Utilizadas
 - HTML: Estrutura da página.
