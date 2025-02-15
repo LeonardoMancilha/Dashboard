@@ -1,6 +1,7 @@
 # Dashboard
 
 ![Imagem do Projeto](https://github.com/user-attachments/assets/9af359c0-d417-4791-8c8f-6c0d40058907)
+![Captura de tela 2025-02-15 170947](https://github.com/user-attachments/assets/50d92cd0-e7d0-4cd5-927a-b04ec187dc98)
 
 ## Descrição
 
